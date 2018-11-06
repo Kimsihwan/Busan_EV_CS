@@ -14,6 +14,9 @@
 		52F890A221911F8700DF1844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F890A021911F8700DF1844 /* LaunchScreen.storyboard */; };
 		52F890AD21911F8700DF1844 /* Busan_EV_CSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F890AC21911F8700DF1844 /* Busan_EV_CSTests.swift */; };
 		52F890B821911F8700DF1844 /* Busan_EV_CSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F890B721911F8700DF1844 /* Busan_EV_CSUITests.swift */; };
+		52F890C62191201800DF1844 /* BusanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F890C52191201800DF1844 /* BusanData.swift */; };
+		52F890C92191203100DF1844 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52F890C82191203100DF1844 /* MapKit.framework */; };
+		52F890CD2191206400DF1844 /* EV.xml in Resources */ = {isa = PBXBuildFile; fileRef = 52F890CC2191206400DF1844 /* EV.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		52F890B321911F8700DF1844 /* Busan_EV_CSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Busan_EV_CSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F890B721911F8700DF1844 /* Busan_EV_CSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Busan_EV_CSUITests.swift; sourceTree = "<group>"; };
 		52F890B921911F8700DF1844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F890C52191201800DF1844 /* BusanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusanData.swift; sourceTree = "<group>"; };
+		52F890C82191203100DF1844 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		52F890CC2191206400DF1844 /* EV.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = EV.xml; path = ../../../EV.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F890C92191203100DF1844 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				52F890AB21911F8700DF1844 /* Busan_EV_CSTests */,
 				52F890B621911F8700DF1844 /* Busan_EV_CSUITests */,
 				52F8909521911F8500DF1844 /* Products */,
+				52F890C72191203000DF1844 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +105,14 @@
 		52F8909621911F8500DF1844 /* Busan_EV_CS */ = {
 			isa = PBXGroup;
 			children = (
+				52F890CC2191206400DF1844 /* EV.xml */,
 				52F8909721911F8500DF1844 /* AppDelegate.swift */,
 				52F8909921911F8500DF1844 /* ViewController.swift */,
 				52F8909B21911F8500DF1844 /* Main.storyboard */,
 				52F8909E21911F8700DF1844 /* Assets.xcassets */,
 				52F890A021911F8700DF1844 /* LaunchScreen.storyboard */,
 				52F890A321911F8700DF1844 /* Info.plist */,
+				52F890C52191201800DF1844 /* BusanData.swift */,
 			);
 			path = Busan_EV_CS;
 			sourceTree = "<group>";
@@ -123,6 +133,14 @@
 				52F890B921911F8700DF1844 /* Info.plist */,
 			);
 			path = Busan_EV_CSUITests;
+			sourceTree = "<group>";
+		};
+		52F890C72191203000DF1844 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52F890C82191203100DF1844 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F890CD2191206400DF1844 /* EV.xml in Resources */,
 				52F890A221911F8700DF1844 /* LaunchScreen.storyboard in Resources */,
 				52F8909F21911F8700DF1844 /* Assets.xcassets in Resources */,
 				52F8909D21911F8500DF1844 /* Main.storyboard in Resources */,
@@ -257,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F8909A21911F8500DF1844 /* ViewController.swift in Sources */,
+				52F890C62191201800DF1844 /* BusanData.swift in Sources */,
 				52F8909821911F8500DF1844 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
